@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    tools:context=".DialogForget"
+    android:paddingHorizontal="20dp"
+    android:background="@color/black">
+
+    <TextView
+        android:id="@+id/forget_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Forget\nPassword?"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/forget_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@+id/forget_heading"
+        android:background="@drawable/filedbackground"
+        android:drawableStart="@drawable/baseline_account_circle_24"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="20dp"
+        android:hint="Enter the Username"
+        android:padding="20dp"
+        android:textColorHint="@color/white"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/forget_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forget_user"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/filedbackground"
+        android:drawableStart="@drawable/baseline_compass_calibration_24"
+        android:drawablePadding="5dp"
+        android:hint="Enter the New Password"
+        android:padding="20dp"
+        android:textColorHint="@color/white"
+        android:textSize="15sp" />
+    <TextView
+        android:id="@+id/forget_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/forget_password"
+        android:textSize="12sp"
+        android:layout_marginTop="20dp"
+        android:text="*We  will send you a message to set or reset your\n new password"/>
+    <RelativeLayout
+        android:id="@+id/rlayoutbtn"
+        android:layout_below="@id/forget_alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Change Password"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/forget_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/signinbutton"
+            android:drawableStart="@drawable/baseline_arrow_forward_24"
+            android:padding="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>

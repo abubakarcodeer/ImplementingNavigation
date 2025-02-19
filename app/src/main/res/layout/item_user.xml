@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Username:"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/item_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User name"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/filedbackground"
+        android:padding="20dp"
+        android:drawableEnd="@drawable/baseline_create_24"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Password:"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/item_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="User password"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/filedbackground"
+        android:padding="20dp"
+        android:drawableEnd="@drawable/baseline_create_24"
+        android:textColor="@color/white"/>
+
+</LinearLayout>
