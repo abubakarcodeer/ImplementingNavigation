@@ -40,5 +40,6 @@
         app:headerLayout="@layout/drawer_header"
         app:itemIconPadding="30dp"
         android:clickable="true"
-        app:menu="@menu/drawer_item" />
+        app:menu="@menu/drawer_item"
+        />
 </androidx.drawerlayout.widget.DrawerLayout>

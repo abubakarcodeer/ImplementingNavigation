@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:layout_below="@+id/forget_heading"
-        android:background="@drawable/filedbackground"
+        android:background="@drawable/filed_background"
         android:drawableStart="@drawable/baseline_account_circle_24"
         android:drawablePadding="5dp"
         android:layout_marginTop="20dp"
@@ -40,7 +40,7 @@
         android:layout_below="@+id/forget_user"
         android:layout_marginTop="20dp"
         android:textColor="@color/white"
-        android:background="@drawable/filedbackground"
+        android:background="@drawable/filed_background"
         android:drawableStart="@drawable/baseline_compass_calibration_24"
         android:drawablePadding="5dp"
         android:hint="Enter the New Password"
@@ -76,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:background="@drawable/signinbutton"
+            android:background="@drawable/sign_in_button"
             android:drawableStart="@drawable/baseline_arrow_forward_24"
             android:padding="15dp" />
     </RelativeLayout>

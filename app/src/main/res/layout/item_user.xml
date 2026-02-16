@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
+    android:paddingHorizontal="10dp"
     android:orientation="vertical">
 
     <TextView
@@ -10,34 +12,39 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Username:"
+        android:textColor="@color/white"
         android:textSize="20sp" />
-    <TextView
+
+    <EditText
         android:id="@+id/item_username"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="User name"
+        android:hint="Abu Bakar..."
+        android:textColorHint="#494848"
         android:layout_marginTop="10dp"
-        android:background="@drawable/filedbackground"
+        android:background="@drawable/filed_background"
         android:padding="20dp"
-        android:drawableEnd="@drawable/baseline_create_24"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        app:drawableEndCompat="@drawable/baseline_create_24" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Password:"
+        android:textColor="@color/white"
         android:textSize="20sp"
         />
-    <TextView
+    <EditText
         android:id="@+id/item_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="User password"
+        android:hint="12345..."
+        android:textColorHint="#494848"
         android:layout_marginTop="10dp"
-        android:background="@drawable/filedbackground"
+        android:background="@drawable/filed_background"
         android:padding="20dp"
-        android:drawableEnd="@drawable/baseline_create_24"
-        android:textColor="@color/white"/>
+        android:textColor="@color/white"
+        app:drawableEndCompat="@drawable/baseline_create_24" />
 
 </LinearLayout>

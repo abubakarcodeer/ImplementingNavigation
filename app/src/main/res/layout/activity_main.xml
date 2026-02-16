@@ -23,10 +23,11 @@
         android:id="@+id/userid"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/filedbackground"
+        android:background="@drawable/filed_background"
         android:drawableStart="@drawable/baseline_account_circle_24"
         android:drawablePadding="5dp"
         android:hint="Username or Email"
+        android:inputType="text"
         android:padding="20dp"
         android:textColor="@color/white"
         android:textColorHint="@color/white"
@@ -37,7 +38,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:background="@drawable/filedbackground"
+        android:inputType="text"
+        android:background="@drawable/filed_background"
         android:drawableStart="@drawable/baseline_compass_calibration_24"
         android:drawablePadding="5dp"
         android:hint="Passworsd"
@@ -75,9 +77,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:background="@drawable/signinbutton"
-            android:drawableStart="@drawable/baseline_arrow_forward_24"
-            android:padding="15dp" />
+            android:background="@drawable/sign_in_button"
+            android:padding="15dp"
+            app:drawableStartCompat="@drawable/baseline_arrow_forward_24"
+            tools:ignore="RelativeOverlap" />
     </RelativeLayout>
 
     <TextView
@@ -94,23 +97,31 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ImageView
+        <ImageButton
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginHorizontal="20dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:contentDescription="googleIcon"
             android:src="@drawable/img_1" />
 
-        <ImageView
+        <ImageButton
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginHorizontal="20dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:contentDescription="iphoneIcon"
             android:src="@drawable/img_2" />
 
-        <ImageView
-
+        <ImageButton
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginHorizontal="20dp"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:contentDescription="facebookICon"
             android:src="@drawable/img_3" />
 
     </LinearLayout>
@@ -125,13 +136,14 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="If You Don't Have a Account?" />
 
         <TextView
             android:id="@+id/registerbtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
             android:text="Register"
             android:textColor="#D31919" />
     </LinearLayout>

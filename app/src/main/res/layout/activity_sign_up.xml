@@ -25,7 +25,7 @@
         android:layout_height="wrap_content"
         android:textColor="@color/white"
         android:layout_below="@+id/tvhead"
-        android:background="@drawable/filedbackground"
+        android:background="@drawable/filed_background"
         android:drawableStart="@drawable/baseline_account_circle_24"
         android:drawablePadding="5dp"
         android:hint="Username or Email"
@@ -40,7 +40,7 @@
         android:layout_below="@+id/signup_username"
         android:layout_marginTop="20dp"
         android:textColor="@color/white"
-        android:background="@drawable/filedbackground"
+        android:background="@drawable/filed_background"
         android:drawableStart="@drawable/baseline_compass_calibration_24"
         android:drawablePadding="5dp"
         android:hint="Password"
@@ -54,7 +54,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/signup_password"
         android:layout_marginTop="20dp"
-        android:background="@drawable/filedbackground"
+        android:background="@drawable/filed_background"
         android:drawableStart="@drawable/baseline_compass_calibration_24"
         android:drawablePadding="5dp"
         android:hint="Confirm Password"
@@ -92,7 +92,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:background="@drawable/signinbutton"
+            android:background="@drawable/sign_in_button"
             android:drawableStart="@drawable/baseline_arrow_forward_24"
             android:padding="15dp" />
     </RelativeLayout>
@@ -114,23 +114,32 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-        <ImageView
+        <ImageButton
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginHorizontal="20dp"
-            android:src="@drawable/img_1" />
+            android:contentDescription="googleIcon"
+            android:src="@drawable/img_1"
+            android:scaleType="fitXY"
+            android:background="@null"/>
 
-        <ImageView
+        <ImageButton
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginHorizontal="20dp"
-            android:src="@drawable/img_2" />
+            android:contentDescription="iphoneIcon"
+            android:src="@drawable/img_2"
+            android:scaleType="fitXY"
+            android:background="@null" />
 
-        <ImageView
+        <ImageButton
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_marginHorizontal="20dp"
-            android:src="@drawable/img_3" />
+            android:contentDescription="facebookIcon"
+            android:src="@drawable/img_3"
+            android:scaleType="fitXY"
+            android:background="@null"/>
 
     </LinearLayout>
     <LinearLayout
